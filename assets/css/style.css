@@ -1,0 +1,261 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/foggy_birds.png);
+	background-attachment: fixed;
+	background-position: center;
+}
+
+a:link {
+	color: #777777;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #777777;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #4aaaa5;
+}
+
+#container {
+	min-height: 100%;
+}
+
+header {
+	height: 50px;
+	border-bottom: solid 2px #cccccc;
+	background-color: #ffffff;
+}
+
+h1 {
+	font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+label, input {
+	display: block;
+}
+
+input {
+	padding: 5px;
+	margin-bottom: 10px;
+	border: solid 1px #cccccc;
+}
+
+input[type="text"] {
+	color: #A9A9AB;
+}
+
+textarea {
+	width: 100%;
+	border: solid 1px #cccccc;
+	margin-bottom: 10px;
+}
+
+.button {
+	background-color: #4aaaa5;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+.nameLogo {
+	display: block;
+	float: left;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	height: 25px;
+	width: 200px;
+	text-align: center;
+	margin-left: 10%;
+	padding: 10px 0 15px 0;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.topMenu {
+	float: right;
+	padding-top: 15px;
+	margin-right: 10%;
+	word-spacing: 20px;
+	letter-spacing: 2px;
+	color: #777777;
+}
+
+#aboutContainer {
+	width: 650px;
+	border: solid 1px #cccccc;
+	float: left;
+	padding: 20px 25px 20px 25px;
+	margin-left: 2%;
+	background-color: #ffffff;
+	color: #777777;
+	margin-top: 1%;
+	margin-bottom: 8%;
+}
+
+#portContainer {
+	width: 650px;
+	border: solid 1px #cccccc;
+	float: left;
+	padding: 20px 25px 20px 25px;
+	margin-left: 10%;
+	background-color: #ffffff;
+	color: #777777;
+	margin-top: 1%;
+	margin-bottom: 8%;
+}
+
+.aboutMe {
+	color: #4aaaa5;
+	border-bottom: solid 2px #cccccc;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 0 0 5px 3px;
+}
+
+.aboutContent {
+	padding-top: 15px;
+	line-height: 35px;
+}
+
+.portContent {
+	position: relative;
+	float: left;
+}
+
+.portContent:nth-child(odd) {
+	margin-left: 40px;
+}
+
+.portContent img {
+	padding-top: 15px;
+	width: 100%;
+}
+
+.portContent h2 {
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 190px;
+    width: 90%;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 30px;
+    font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+.aboutContent img {
+	overflow: hidden;
+	float: left;
+	padding-right: 20px;
+}
+
+#connect {
+	width: 270px;
+	border: solid 1px #cccccc;
+	float: right;
+	margin-right: 2%;
+	background-color: #ffffff;
+	padding: 20px 25px 20px 25px;
+	margin-top: 1%;
+	margin-bottom: 8%;
+}
+
+#connect img {
+	height: 30%;
+	width: 30%;
+	padding: 10px 2px 0 2px;
+}
+
+.connectHead {
+	border-bottom: solid 2px #cccccc;
+	color: #4aaaa5;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 0 0 5px 3px;
+}
+
+footer {
+	font-size: 12px;
+	height: 20px;
+	border-top: solid 5px #4aaaa5;
+	background-color: #666666;
+	text-align: center;
+	color: #ccc;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	padding: 1rem;
+	padding-top: 25px;
+}
+
+@media screen and (max-width: 980px) {
+	#aboutContainer {
+		width: 398px;
+		margin-left: 1%;
+	}
+	#connect {
+		margin-right: 1%;
+		width: 228px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#aboutContainer {
+		margin: auto;
+		width: 398px
+	}
+	#connect {
+		width: 398px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#aboutContainer {
+		width: 90%
+	}
+	#aboutContainer img {
+		width: 100%
+	}
+	#portContainer {
+		width: 90%;
+		margin: auto;
+	}
+	#portContainer img {
+		margin: auto;
+	}
+	.topMenu {
+		height: 50px;
+		width: 100%;
+		background-color: #ffffff;
+		margin: auto;
+		border-bottom: solid 2px #cccccc;
+	}
+	.topMenu a {
+		margin-left: 10%;
+		padding: 10px 0 0 0;
+	}
+	.nameLogo{
+		width: 100%;
+		margin: auto;
+	}
+	#connect {
+		margin: auto;
+		width: 90%;
+		margin-bottom: 10%;
+	}
+	#connect img {
+		height: 20%;
+		width: 20%;
+	}
+}
